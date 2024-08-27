@@ -1,0 +1,27 @@
+@import 'src/variables.scss';
+
+.button {
+	border: none;
+	background: $buttonSecondaryBg;
+	padding: 2px 8px;
+	border-radius: 20px;
+	color: $mainColor;
+	font-size: 14px;
+	font-weight: 600;
+	line-height: 16px;
+
+	&:hover {
+		background: $buttonSecondaryHoverBg;
+	}
+	&:active {
+		background: $buttonSecondaryActiveBg;
+	}
+	&:disabled {
+		background: $buttonDisabledBg;
+		color: $buttonDisabledText;
+	}
+	&:focus-visible {
+		border: 1px solid $teal;
+		outline: none;
+	}
+}

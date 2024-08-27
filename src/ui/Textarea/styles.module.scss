@@ -1,0 +1,17 @@
+@import 'src/variables.scss';
+.textarea {
+	padding: 4px 8px;
+	border-radius: 2px;
+	border: 1px solid $grey;
+	font-size: 14px;
+	font-style: normal;
+	font-weight: 400;
+	line-height: 130%;
+	color: $textareaColor;
+	&:focus {
+		border-color: $mainColor;
+	}
+	&:hover {
+		border-color: $grey;
+	}
+}

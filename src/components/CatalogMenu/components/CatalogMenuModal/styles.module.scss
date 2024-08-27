@@ -1,0 +1,72 @@
+@import 'src/variables';
+:global {
+	.ant-drawer-top > .ant-drawer-content-wrapper {
+		box-shadow: none;
+	}
+	.ant-drawer-content-wrapper {
+		.ant-drawer-content {
+			background: transparent;
+
+			.ant-drawer-body {
+				padding: 0;
+			}
+		}
+	}
+}
+
+.drawer {
+	position: fixed;
+	.container {
+		margin: 0 auto;
+		max-width: 1080px;
+
+		.menu {
+			width: fit-content;
+
+			&.oneBox {
+				.box {
+					&:first-child {
+						border-radius: 0 0 16px 16px;
+					}
+				}
+			}
+			.box:first-child {
+				$elements: 3, 4, 9, 10;
+
+				@each $element in $elements {
+					:nth-child(#{$element}) {
+						&:hover {
+							> div {
+								> div {
+									svg {
+										path {
+											fill: $mainTextColor;
+											stroke: none;
+										}
+									}
+								}
+							}
+						}
+					}
+				}
+			}
+
+			.box {
+				max-height: 556px;
+				overflow-y: auto;
+				background: $mainBgColor;
+				padding: 16px;
+				width: 270px;
+				border-right: 1px solid $borderColor;
+
+				&:last-child {
+					border-radius: 0 0 16px 0;
+					border-right: none;
+				}
+				&:first-child {
+					border-radius: 0 0 0 16px;
+				}
+			}
+		}
+	}
+}

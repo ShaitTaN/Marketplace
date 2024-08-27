@@ -1,0 +1,36 @@
+@import 'src/variables.scss';
+
+.table {
+	border-collapse: collapse;
+	border: 1px solid $tableBorderColor;
+
+	.head {
+		width: 147px;
+		height: 63px;
+		font-size: 14px;
+		font-weight: 600;
+		line-height: 16px;
+		color: $mainTextColor;
+		background: $backgroundLight;
+		padding: 10px 12px;
+		text-align: left;
+	}
+	.cell {
+		width: 125px;
+		min-width: 125px;
+		height: 63px;
+		text-align: center;
+		font-size: 14px;
+		font-weight: 400;
+		line-height: 130%;
+		color: $mainTextColor;
+		cursor: pointer;
+
+		&.active {
+			background: transparentize($secondaryColor, 0.9);
+		}
+		&.selected {
+			background: transparentize($secondaryColor, 0.8);
+		}
+	}
+}

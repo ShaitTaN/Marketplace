@@ -1,0 +1,69 @@
+@import 'src/variables.scss';
+.userProfileSavedPublishsPageWrapper {
+	width: 814px;
+	.titlePage {
+		background-color: $white;
+		width: 100%;
+		border-radius: 16px;
+		padding: 24px;
+		> span {
+			font-family: Geologica;
+			font-size: 24px;
+			font-style: normal;
+			font-weight: 500;
+			line-height: normal;
+			color: $mainTextColor;
+		}
+		> div {
+			display: flex;
+		}
+		&.titleWhenNoPublishes {
+			border-radius: 16px 16px 0 0;
+		}
+	}
+
+	.publishesWrapperWithContent {
+		display: grid;
+		grid-template-columns: repeat(2, 1fr);
+		grid-gap: 12px;
+	}
+
+	.publishesWrapperWithoutContent {
+		background-color: $white;
+		padding: calc(288px - 24px) 24px 349px 24px;
+		border-radius: 0 0 16px 16px;
+		height: 100%;
+		> span {
+			width: 448px;
+			font-size: 14px;
+			font-style: normal;
+			font-weight: 400;
+			line-height: 130%;
+			color: $textareaColor;
+			text-align: center;
+		}
+		svg {
+			margin-bottom: -12px;
+		}
+	}
+}
+
+.helpPopover {
+	.helpText {
+		width: 183px;
+		span {
+			font-size: 12px;
+			font-style: normal;
+			font-weight: 400;
+			line-height: 120%;
+			color: $textareaColor;
+			strong {
+				font-size: 12px;
+				font-style: normal;
+				font-weight: 600;
+				line-height: normal;
+				color: $textareaColor;
+			}
+		}
+	}
+}

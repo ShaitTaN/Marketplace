@@ -1,0 +1,54 @@
+@import '/src/variables.scss';
+
+.badge {
+	padding: 2px 6px;
+	border-radius: 4px;
+	text-transform: uppercase;
+	font-family: Geologica;
+	line-height: normal;
+	color: $secondaryTextColor;
+	width: fit-content;
+
+	&.default {
+		background: $mainBgColor;
+		color: $mainTextColor;
+	}
+	&.new {
+		background: #12c5b7;
+	}
+	&.exclusive {
+		background: #eba620;
+	}
+	&.discount {
+		background: #d02438;
+	}
+	&.notification {
+		background: $teal;
+		padding: 2px 8px;
+		border-radius: 20px;
+		font-family: Inter;
+	}
+	&.outOfStock {
+		background: $mainTextColor;
+		text-transform: none;
+		font-family: Inter;
+		&.normal {
+			font-size: 12px;
+			font-weight: 600;
+		}
+		&.large {
+			font-size: 16px;
+			font-weight: 600;
+		}
+	}
+
+	&.normal {
+		font-size: 12px;
+		font-weight: 800;
+	}
+	&.large {
+		font-size: 16px;
+		font-weight: 800;
+		padding: 2px 8px;
+	}
+}

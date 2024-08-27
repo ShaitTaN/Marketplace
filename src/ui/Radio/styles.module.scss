@@ -1,0 +1,26 @@
+@import 'src/variables.scss';
+
+.radio {
+	width: 100%;
+	height: 100%;
+	margin: 0;
+	:global {
+		.ant-radio-wrapper {
+			width: 100%;
+			height: 100%;
+			.ant-radio-inner {
+				border-color: $radioBorderColor;
+			}
+			&-checked {
+				.ant-radio-inner {
+					border-color: $radioCheckedBorderColor;
+					background-color: $white;
+					&:after {
+						background-color: $radioCheckedBorderColor;
+						transform: scale(0.5);
+					}
+				}
+			}
+		}
+	}
+}

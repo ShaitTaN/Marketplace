@@ -1,0 +1,11 @@
+@import 'src/variables.scss';
+
+.modal {
+	:global {
+		.ant-modal-content {
+			.ant-modal-footer {
+				justify-content: start;
+			}
+		}
+	}
+}

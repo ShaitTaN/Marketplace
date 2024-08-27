@@ -1,0 +1,48 @@
+@import 'src/variables.scss';
+
+.reviewAuthor {
+	font-size: 14px;
+	font-style: normal;
+	width: 100%;
+
+	.info {
+		width: 90px;
+		.name {
+			font-weight: 600;
+			color: $mainTextColor;
+		}
+		.date {
+			color: $tertiaryTextColor;
+			font-size: 12px;
+			line-height: 120%;
+		}
+	}
+	.wrapperPopover {
+		margin: 0 0 0 auto;
+	}
+
+	.helpPopover {
+		span {
+			font-size: 12px;
+			font-style: normal;
+			font-weight: 400;
+			line-height: 120%;
+			color: $mainTextColor;
+		}
+	}
+	.exclamation {
+		margin: 0 0 0 auto;
+		cursor: pointer;
+		width: 24px;
+		height: 24px;
+		path {
+			stroke: $secondaryColor;
+			transition: stroke 0.3s ease;
+		}
+		&:hover {
+			path {
+				stroke: $mainColor;
+			}
+		}
+	}
+}

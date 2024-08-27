@@ -1,0 +1,120 @@
+@import 'src/variables.scss';
+
+.writeCommentInput {
+	::placeholder {
+		color: #adb2d4;
+		font-size: 12px;
+		font-style: normal;
+		font-weight: 400;
+		line-height: 14.4px;
+	}
+
+	&.search {
+		border-radius: 8px;
+		height: 32px;
+		width: 100%;
+		border: 1.5px solid $mainColor;
+		background-color: $mainColor;
+		:global {
+			.ant-input-wrapper {
+				height: 100%;
+			}
+			.ant-btn {
+				display: flex;
+				justify-content: center;
+				align-items: center;
+				width: 32px;
+				height: 100%;
+				padding: 8px;
+				border-radius: 0 8px 8px 0;
+				background-color: $mainColor;
+				border: none;
+				&:not(.\9):hover {
+					background-color: $buttonPrimaryHoverBg;
+					color: white;
+				}
+				&:not(.\9):active {
+					background-color: $buttonPrimaryActiveBg;
+					color: white;
+				}
+			}
+			.ant-input {
+				padding: 11px 12px;
+				display: flex;
+				align-items: center;
+				font-size: 12px;
+				font-style: normal;
+				font-weight: 400;
+				line-height: 14.4px;
+				color: $mainTextColor;
+				border: none;
+			}
+			.ant-input-group {
+				display: flex;
+			}
+			.ant-input-group-addon {
+				height: 100%;
+				width: 32px;
+			}
+		}
+	}
+
+	&.message {
+		border: 2px solid $secondaryColor;
+		border-radius: 8px;
+		min-height: 44px;
+		width: 100%;
+		position: relative;
+
+		.textArea {
+			font-size: 18px;
+			font-style: normal;
+			font-weight: 400;
+			line-height: normal;
+			color: $mainTextColor;
+			border: none;
+			width: 100%;
+			padding: 11px 60px 11px 16px;
+			min-height: 40px;
+		}
+
+		.sendButton {
+			border: none;
+			position: absolute;
+			right: -3px;
+			top: 0;
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			width: 44px;
+			height: 100%;
+			padding: 8px;
+			border-radius: 0px 8px 8px 0;
+			background-color: $secondaryColor;
+			&:not(.\9):hover {
+				background-color: $buttonSecondaryHoverBg;
+				color: white;
+			}
+			&:not(.\9):active {
+				background-color: $buttonSecondaryActiveBg;
+				color: white;
+			}
+			cursor: pointer;
+		}
+		&.inputActive {
+			border: 2px solid $mainColor;
+			background-color: $mainColor;
+			.sendButton {
+				background-color: $mainColor;
+				&:not(.\9):hover {
+					background-color: $buttonPrimaryHoverBg;
+					color: white;
+				}
+				&:not(.\9):active {
+					background-color: $buttonPrimaryActiveBg;
+					color: white;
+				}
+			}
+		}
+	}
+}

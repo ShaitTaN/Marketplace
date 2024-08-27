@@ -1,0 +1,74 @@
+@import 'src/variables.scss';
+
+.pagination {
+	:global {
+		.ant-pagination {
+			height: 28px;
+			display: flex;
+			.ant-pagination-prev {
+				display: flex;
+				align-items: center;
+				justify-content: center;
+				height: 28px;
+				width: 28px;
+				min-width: 28px;
+				margin-inline-end: 8px;
+				&.ant-pagination-disabled {
+					svg {
+						path {
+							stroke: $disabledColor;
+						}
+					}
+				}
+			}
+			.ant-pagination-next {
+				display: flex;
+				align-items: center;
+				justify-content: center;
+				height: 28px;
+				width: 28px;
+				min-width: 28px;
+				margin-inline-start: 4px;
+				&.ant-pagination-disabled {
+					svg {
+						path {
+							stroke: $disabledColor;
+						}
+					}
+				}
+			}
+			.ant-pagination-item-link {
+				display: flex;
+				align-items: center;
+				justify-content: center;
+			}
+			.ant-pagination-item {
+				height: 28px;
+				width: 28px;
+				min-width: 28px;
+				display: flex;
+				align-items: center;
+				justify-content: center;
+				line-height: normal;
+				margin-inline-end: 4px;
+				border-radius: 4px;
+
+				&.ant-pagination-item-active {
+					background: $mainColor;
+					border-color: $mainColor;
+					& > a {
+						color: $white;
+					}
+				}
+
+				> a {
+					font-size: 14px;
+					font-style: normal;
+					font-weight: 600;
+					line-height: 16px;
+					color: $textActiveColor;
+				}
+			}
+		}
+	}
+}

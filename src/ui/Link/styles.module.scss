@@ -1,0 +1,82 @@
+@import 'src/variables.scss';
+
+.link {
+	display: block;
+	border: none;
+	background: none;
+	padding: 0;
+	width: fit-content;
+	cursor: pointer;
+
+	&:focus-visible {
+		border-radius: 6px;
+		border: 1px solid $teal;
+		outline: none;
+	}
+
+	&.primary {
+		color: $linkPrimary;
+		> * {
+			color: inherit;
+		}
+		&:hover {
+			color: $linkPrimaryHover;
+			text-decoration: underline;
+			background-color: inherit;
+			> * {
+				color: inherit;
+			}
+		}
+		&:active {
+			color: $linkPrimaryActive;
+			text-decoration: underline;
+		}
+	}
+	&.secondary {
+		color: $linkSecondary;
+		&:hover {
+			color: $linkSecondaryHover;
+			text-decoration: underline;
+		}
+		&:active {
+			color: $linkSecondaryActive;
+			text-decoration: underline;
+		}
+	}
+	&.tertiary {
+		color: $linkTertiary;
+		&:hover {
+			color: $linkTertiaryHover;
+			text-decoration: underline;
+		}
+		&:active {
+			color: $linkTertiaryActive;
+			text-decoration: underline;
+		}
+	}
+
+	&.small {
+		font-size: 12px;
+		font-weight: 600;
+		line-height: normal;
+	}
+	&.normal {
+		font-size: 14px;
+		font-weight: 600;
+		line-height: 16px;
+	}
+	&.medium {
+		font-size: 16px;
+		font-weight: 600;
+		line-height: normal;
+	}
+	&.big {
+		font-size: 18px;
+		font-weight: 600;
+		line-height: normal;
+	}
+	&.disabled {
+		color: $linkDisabled;
+		pointer-events: none;
+	}
+}

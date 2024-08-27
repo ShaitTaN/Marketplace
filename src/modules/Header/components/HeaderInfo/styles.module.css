@@ -1,0 +1,14 @@
+.flex {
+  height: 15px;
+  margin-top: 20px;
+}
+.flex .link {
+  color: #171d4b;
+  font-size: 12px;
+  font-weight: 600;
+  line-height: 14.52px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 4px;
+}

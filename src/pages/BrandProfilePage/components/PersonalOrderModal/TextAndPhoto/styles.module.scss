@@ -1,0 +1,68 @@
+@import 'src/variables.scss';
+
+.textAndPhoto {
+	font-size: 14px;
+	font-style: normal;
+	font-weight: 400;
+	line-height: 130%;
+	margin-top: 20px;
+	width: 648px;
+
+	.requiredField {
+		color: $mainTextColor;
+		span {
+			color: $warningTextColor;
+		}
+	}
+	.upload {
+		> span {
+			color: $mainTextColor;
+		}
+		&.disabled {
+			> svg {
+				g {
+					path {
+						stroke: $textDescriptionColor;
+					}
+				}
+			}
+			> span {
+				color: $textDescriptionColor;
+			}
+		}
+	}
+	.imagesBlock {
+		.imageWrapper {
+			position: relative;
+
+			.image {
+				width: 80px;
+				height: 80px;
+				border-radius: 4px;
+				object-fit: cover;
+				filter: brightness(96%);
+			}
+			.noImage {
+				width: 80px;
+				height: 80px;
+				border-radius: 4px;
+				background: $grey;
+			}
+
+			> svg {
+				position: absolute;
+				top: 0;
+				right: 0;
+				cursor: pointer;
+				width: 16px;
+				height: 16px;
+			}
+		}
+	}
+	.description {
+		font-size: 12px;
+		line-height: 120%;
+		color: $textDescriptionColor;
+		max-width: 387px;
+	}
+}

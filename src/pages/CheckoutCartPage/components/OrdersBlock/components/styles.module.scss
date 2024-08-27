@@ -1,0 +1,35 @@
+@import 'src/variables.scss';
+
+.wrapper {
+	padding: 24px;
+	background-color: $white;
+	border-radius: 16px;
+	width: 704px;
+	> h4 {
+		margin: 0;
+		font-size: 18px;
+		font-style: normal;
+		font-weight: 600;
+		line-height: normal;
+		color: $mainTextColor;
+	}
+	.slide {
+		width: 152px;
+		.product {
+			width: 100%;
+			.imgWrapper {
+				width: 152px;
+				height: 152px;
+			}
+
+			> span {
+				padding: 0 4px;
+				font-size: 14px;
+				font-style: normal;
+				font-weight: 400;
+				line-height: 130%;
+				color: $textareaColor;
+			}
+		}
+	}
+}

@@ -1,0 +1,17 @@
+@import 'src/variables.scss';
+
+.banner {
+	.item {
+		height: 184px;
+		border-radius: 16px;
+		background-color: $grey;
+		width: 100%;
+
+		img {
+			width: 100%;
+			height: 100%;
+			object-fit: cover;
+			border-radius: 16px;
+		}
+	}
+}

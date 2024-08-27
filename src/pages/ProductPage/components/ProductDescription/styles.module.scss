@@ -1,0 +1,21 @@
+@import 'src/variables.scss';
+
+.description {
+	color: $mainTextColor;
+	font-style: normal;
+	line-height: normal;
+
+	h3 {
+		margin: 0;
+		font-size: 24px;
+		font-weight: 500;
+		font-family: 'Geologica';
+	}
+	p {
+		margin: 0;
+		font-size: 14px;
+		line-height: 130%;
+		font-style: normal;
+		font-weight: 400;
+	}
+}

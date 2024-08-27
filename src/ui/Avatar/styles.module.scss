@@ -1,0 +1,80 @@
+@import 'src/variables.scss';
+
+.avatarWrapper {
+	display: flex;
+
+	/* wrapper Size */
+	&.small {
+		width: 44px;
+		height: 44px;
+	}
+	&.medium {
+		width: 56px;
+		height: 56px;
+	}
+	&.large {
+		width: 153px;
+		height: 153px;
+	}
+	/* wrapper Size */
+
+	&.bordered {
+		align-items: center;
+		justify-content: center;
+		border-radius: 50px;
+		border: 2px solid transparent;
+		background-image: linear-gradient(white, white), linear-gradient(to bottom, #32ccc0, #007489, #171d4b);
+		background-origin: border-box;
+		background-clip: content-box, border-box;
+
+		> span {
+			background: $backgroundGrey;
+		}
+
+		/* avatar Size */
+		.small {
+			width: 36px;
+			height: 36px;
+		}
+		.medium {
+			width: 50px;
+			height: 50px;
+		}
+		.large {
+			width: 137px;
+			height: 137px;
+		}
+		/* avatar Size */
+	}
+	&.not-bordered {
+		> span {
+			background: $backgroundGrey;
+		}
+		/* avatar Size */
+		.small {
+			width: 36px;
+			height: 36px;
+		}
+		.normal {
+			width: 48px;
+			height: 48px;
+		}
+		.medium {
+			width: 56px;
+			height: 56px;
+		}
+		.large {
+			width: 153px;
+			height: 153px;
+		}
+		/* avatar Size */
+	}
+	.avatar {
+		border-radius: 50px;
+		border: 0.5px solid #adb2d4;
+		img {
+			filter: brightness(96%);
+			object-fit: cover;
+		}
+	}
+}

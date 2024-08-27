@@ -1,0 +1,76 @@
+[
+	{
+		"uuid": "3fa85f64-5717-4562-b3fc-2c963f66afa6",
+		"description": "string",
+		"likes": {
+			"opaque": 0,
+			"acquire": 0,
+			"andIncrement": 0,
+			"andDecrement": 0,
+			"plain": 0
+		},
+		"amountComments": 0,
+		"comments": [
+			{
+				"uuid": "3fa85f64-5717-4562-b3fc-2c963f66afa6",
+				"createdDateTime": "2024-04-24T01:01:36.133Z",
+				"updatedDateTime": "2024-04-24T01:01:36.133Z",
+				"isActive": true,
+				"content": "string",
+				"parent": "string",
+				"client": {
+					"uuid": "3fa85f64-5717-4562-b3fc-2c963f66afa6",
+					"firstName": "string",
+					"lastName": "string",
+					"profilePicture": {
+						"uuid": "3fa85f64-5717-4562-b3fc-2c963f66afa6",
+						"filePath": "string"
+					}
+				}
+			}
+		],
+		"picturesList": [
+			{
+				"uuid": "3fa85f64-5717-4562-b3fc-2c963f66afa6",
+				"filePath": "string"
+			}
+		]
+	},
+	{
+		"uuid": "3fa85f64-5717-4562-b3fc-2c963f66afa6",
+		"description": "string",
+		"likes": {
+			"opaque": 0,
+			"acquire": 0,
+			"andIncrement": 0,
+			"andDecrement": 0,
+			"plain": 0
+		},
+		"amountComments": 0,
+		"comments": [
+			{
+				"uuid": "3fa85f64-5717-4562-b3fc-2c963f66afa6",
+				"createdDateTime": "2024-04-24T01:01:36.133Z",
+				"updatedDateTime": "2024-04-24T01:01:36.133Z",
+				"isActive": true,
+				"content": "string",
+				"parent": "string",
+				"client": {
+					"uuid": "3fa85f64-5717-4562-b3fc-2c963f66afa6",
+					"firstName": "string",
+					"lastName": "string",
+					"profilePicture": {
+						"uuid": "3fa85f64-5717-4562-b3fc-2c963f66afa6",
+						"filePath": "string"
+					}
+				}
+			}
+		],
+		"picturesList": [
+			{
+				"uuid": "3fa85f64-5717-4562-b3fc-2c963f66afa6",
+				"filePath": "string"
+			}
+		]
+	}
+]

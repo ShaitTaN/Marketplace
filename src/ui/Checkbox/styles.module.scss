@@ -1,0 +1,42 @@
+.checkbox {
+	display: block;
+	position: relative;
+	cursor: pointer;
+	-webkit-user-select: none;
+	-moz-user-select: none;
+	-ms-user-select: none;
+	user-select: none;
+	border: 2px solid #dbdbdb;
+	flex-shrink: 0;
+
+	&.normal {
+		width: 24px;
+		height: 24px;
+		border-radius: 6px;
+		svg {
+			width: 24px;
+			height: 24px;
+		}
+	}
+	&.small {
+		width: 16px;
+		height: 16px;
+		border-radius: 4px;
+		svg {
+			width: 16px;
+			height: 16px;
+		}
+	}
+
+	&.checked {
+		border: none;
+	}
+
+	input {
+		position: absolute;
+		opacity: 0;
+		cursor: pointer;
+		height: 0;
+		width: 0;
+	}
+}

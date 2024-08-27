@@ -1,0 +1,96 @@
+@import 'src/variables.scss';
+
+.card {
+	width: 350px;
+	border: none;
+	background: #fff;
+	font-weight: 400;
+	font-style: normal;
+	line-height: normal;
+
+	.imgWrapper {
+		position: relative;
+
+		.extraImgContent {
+			cursor: pointer;
+			position: absolute;
+			top: 10px;
+			right: 10px;
+
+			&.heartActive {
+				> svg {
+					path {
+						fill: $warningTextColor;
+						stroke: $warningTextColor;
+					}
+				}
+			}
+		}
+
+		.statuses {
+			display: flex;
+			position: absolute;
+			bottom: 8px;
+			left: 8px;
+			gap: 4px;
+		}
+	}
+
+	.noImg {
+		width: 100%;
+		background: $grey;
+		border-radius: 8px;
+	}
+
+	.price {
+		color: $mainTextColor;
+		font-size: 16px;
+		font-weight: 600;
+		line-height: normal;
+	}
+	.oldPrice {
+		color: $tertiaryTextColor;
+		font-size: 14px;
+		line-height: 16px;
+		text-decoration-line: line-through;
+	}
+	.rating {
+		font-size: 14px;
+		line-height: 130%;
+		color: $textareaColor;
+	}
+	.commentsCount {
+		color: $secondaryColor;
+		font-size: 14px;
+		margin-left: 3px;
+		line-height: 130%;
+	}
+	.title {
+		text-overflow: ellipsis;
+		font-size: 14px;
+		color: $textareaColor;
+		margin: 4px 0 3px;
+		line-clamp: 1;
+		line-height: 130%;
+		-webkit-line-clamp: 1;
+	}
+	.content {
+		padding: 0 4px;
+	}
+
+	:global {
+		.ant-card-cover {
+			width: 100%;
+			img {
+				filter: brightness(96%);
+				border-radius: 8px;
+				object-fit: cover;
+				width: 100%;
+				height: 100%;
+			}
+		}
+		.ant-card-body {
+			padding: 12px 0 0 0;
+		}
+	}
+}

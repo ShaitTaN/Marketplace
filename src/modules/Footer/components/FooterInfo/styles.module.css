@@ -1,0 +1,25 @@
+.flex :global .ant-typography {
+  color: white;
+  font-size: 18px;
+  font-weight: 600;
+  margin: 0;
+}
+
+a {
+  color: white;
+  font-size: 16px;
+  font-weight: 400;
+  max-width: 218px;
+}
+
+.flexLogo {
+  width: 194px;
+  height: 44px;
+}
+
+.flexEnd .text {
+  font-size: 12px;
+  color: white;
+  font-weight: 400;
+  max-width: 338px;
+}

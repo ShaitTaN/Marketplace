@@ -1,0 +1,52 @@
+image: node:18
+
+stages:
+  - lint
+  - test
+  - build
+  - build-docker-image
+
+variables:
+  SERVICE_NAME: general-webapp
+  DOCKER_REPOSITORY_URL: cr.selcloud.ru
+  DOCKER_TLS_CERTDIR: '/certs'
+
+lint project:
+  stage: lint
+  script:
+    - npm ci
+    - npm run lint
+  only:
+    - merge_request
+
+test project:
+  stage: test
+  script:
+    - npm ci
+    - npm run test
+  only:
+    - merge_request
+
+build project:
+  stage: build
+  script:
+    - npm ci
+    - npm run build
+  only:
+    - main
+    - web
+
+build-docker-image:
+  image: docker:24.0.5
+  stage: build-docker-image
+  services:
+    - docker:24.0.5-dind
+  variables:
+    VERSION_TAG: $CI_COMMIT_REF_SLUG.$CI_PIPELINE_ID
+  script:
+    - docker build -t $DOCKER_REPOSITORY_URL/registry-lysende-ru/$SERVICE_NAME:$VERSION_TAG .
+    - docker login -u $DOCKER_REGISTRY_USER -p $DOCKER_REGISTRY_PASSWORD $DOCKER_REPOSITORY_URL
+    - docker push $DOCKER_REPOSITORY_URL/registry-lysende-ru/$SERVICE_NAME:$VERSION_TAG
+  only:
+    - main
+    - web

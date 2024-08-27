@@ -1,0 +1,21 @@
+@import '../../variables.scss';
+
+.basicRadio {
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 130%;
+    color: $mainTextColor;
+
+    :global {
+        .ant-radio-checked {
+            .ant-radio-inner {
+                border-color: $mainColor;
+                background-color: $white;
+                &::after {
+                    background-color: $mainColor;
+                }
+            }
+        }
+    }
+}

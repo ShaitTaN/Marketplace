@@ -1,0 +1,40 @@
+@import 'src/variables.scss';
+
+.breadcrumb {
+	color: $mainTextColor;
+	font-size: 12px;
+	font-weight: 600;
+
+	li {
+		cursor: pointer;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+
+		a {
+			height: auto;
+		}
+		&:hover {
+			text-decoration: underline;
+		}
+	}
+
+	:global {
+		.ant-breadcrumb-separator {
+			display: flex;
+			align-items: center;
+			justify-content: center;
+			margin-inline: 4px;
+			width: 24px;
+			height: 24px;
+			cursor: auto;
+			> svg {
+				g {
+					path {
+						stroke: $secondaryColor;
+					}
+				}
+			}
+		}
+	}
+}

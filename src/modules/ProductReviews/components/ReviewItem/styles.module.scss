@@ -1,0 +1,59 @@
+@import 'src/variables.scss';
+
+.review {
+	font-size: 14px;
+	font-style: normal;
+	width: 100%;
+
+	.text {
+		color: $mainTextColor;
+		margin-left: 48px;
+		line-height: 130%;
+
+		&.brandText {
+			margin-left: 0px;
+		}
+	}
+	.images {
+		margin-left: 48px;
+
+		&.brandImages {
+			margin-left: 0px;
+		}
+
+		.item {
+			background: $grey;
+			height: 168px;
+			width: 168px;
+			border-radius: 8px;
+			cursor: pointer;
+
+			img {
+				width: 100%;
+				height: 100%;
+				object-fit: cover;
+				border-radius: 8px;
+			}
+		}
+	}
+
+	.reply {
+		margin-left: 48px;
+		color: $secondaryColor;
+		cursor: pointer;
+		background: transparent;
+		border: none;
+		width: fit-content;
+		padding: 0;
+
+		&:hover {
+			text-decoration: underline;
+		}
+	}
+
+	.replies {
+		margin-left: 48px;
+		margin-top: 4px;
+		border-left: 1px solid $secondaryColor;
+	}
+}

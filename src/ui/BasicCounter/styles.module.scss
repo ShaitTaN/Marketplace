@@ -1,0 +1,34 @@
+@import '../../variables.scss';
+
+.basicCounter {
+    width: 146px;
+    height: 36px;
+
+    .counterBtn {
+        border: none;
+        border-radius: 8px;
+        padding: 0;
+        background-color: $backgroundLight;
+        width: 36px;
+        height: 36px;
+        cursor: pointer;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        svg {
+            path {
+                stroke: $mainColor;
+            }
+        }
+    }
+
+    .count {
+        font-family: Inter;
+        font-size: 14px;
+        font-style: normal;
+        font-weight: 600;
+        line-height: 16px;
+        color: $mainColor;
+    }
+}

@@ -1,0 +1,12 @@
+@import 'src/variables.scss';
+
+.wrapper {
+	padding: 24px;
+
+	.title {
+		font-size: 22px;
+		font-weight: 600;
+		line-height: normal;
+		color: $mainTextColor;
+	}
+}

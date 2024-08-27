@@ -1,0 +1,20 @@
+@import '../../variables.scss';
+.dropdown {
+    :global {
+        .ant-dropdown-menu {
+            .ant-dropdown-menu-item {
+                clear: none;
+
+                &-active {
+                    background: none;
+                }
+                &:hover {
+                    background: none;
+                }
+            }
+            .ant-dropdown-menu-title-content {
+                color: $mainTextColor;
+            }
+        }
+    }
+}

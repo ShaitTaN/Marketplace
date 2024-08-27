@@ -1,0 +1,71 @@
+@import 'src/variables.scss';
+.wrapper {
+	padding: 24px;
+	background-color: $white;
+	border-radius: 16px;
+	width: 704px;
+	.header {
+		.backButton {
+			border: none;
+			background: none;
+			cursor: pointer;
+			display: flex;
+			align-items: center;
+			padding: 0;
+			width: fit-content;
+			span {
+				color: $mainColor;
+				font-size: 12px;
+				font-style: normal;
+				font-weight: 600;
+				line-height: normal;
+			}
+			svg {
+				padding: 4px;
+			}
+		}
+		> h3 {
+			font-family: 'Geologica';
+			margin: 0;
+			font-size: 24px;
+			font-style: normal;
+			font-weight: 500;
+			line-height: normal;
+			color: $mainTextColor;
+		}
+	}
+
+	> h4 {
+		margin: 0;
+		font-size: 18px;
+		font-style: normal;
+		font-weight: 600;
+		line-height: normal;
+		color: $mainTextColor;
+	}
+	.fmlField {
+		input {
+			padding: 5px 12px;
+			font-size: 14px;
+			font-style: normal;
+			font-weight: 400;
+			line-height: 130%;
+			height: 32px;
+		}
+		> h5 {
+			margin: 0;
+			font-size: 14px;
+			font-style: normal;
+			font-weight: 600;
+			line-height: 16px;
+			color: $textareaColor;
+		}
+		> span {
+			font-size: 12px;
+			font-style: normal;
+			font-weight: 400;
+			line-height: 120%;
+			color: $tertiaryTextColor;
+		}
+	}
+}

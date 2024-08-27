@@ -1,0 +1,30 @@
+@import '../../../../variables.scss';
+
+.form {
+    padding: 24px;
+    width: 469px;
+    .subtitle {
+        font-size: 14px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 130%;
+        color: $mainTextColor;
+        margin: 0;
+    }
+    .text {
+        font-size: 14px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 130%;
+        color: $mainTextColor;
+        > span {
+            color: $warningTextColor;
+        }
+    }
+    :global {
+        .ant-input {
+            resize: none;
+            width: 100%;
+        }
+    }
+}

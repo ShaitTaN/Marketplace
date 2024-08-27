@@ -1,0 +1,18 @@
+@import 'src/variables.scss';
+
+.statInfo {
+	.count {
+		color: $mainTextColor;
+		font-size: 18px;
+		font-style: normal;
+		font-weight: 600;
+		line-height: normal;
+	}
+	.title {
+		color: $mainTextColor;
+		font-size: 12px;
+		font-style: normal;
+		font-weight: 400;
+		line-height: 14.4px;
+	}
+}

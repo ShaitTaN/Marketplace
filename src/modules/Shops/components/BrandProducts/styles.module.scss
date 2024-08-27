@@ -1,0 +1,26 @@
+@import 'src/variables.scss';
+
+.grid {
+	display: grid;
+	grid-template-columns: repeat(3, 1fr);
+	grid-row-gap: 24px;
+	grid-column-gap: 12px;
+	padding: 24px;
+	background: $mainBgColor;
+	border-radius: 16px;
+
+}
+
+.empty {
+	padding: 24px;
+	background: $mainBgColor;
+	border-radius: 16px;
+	height: 360px;
+	font-size: 16px;
+	font-weight: 400;
+	line-height: normal;
+	color: $mainTextColor;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}

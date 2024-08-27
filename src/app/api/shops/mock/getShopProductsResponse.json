@@ -1,0 +1,78 @@
+[
+	{
+		"uuid": "3fa85f64-5717-4562-b3fc-2c963f66afa6",
+		"name": "string",
+		"discount": 20,
+		"rating": 0,
+		"amountReviews": 0,
+		"price": 100,
+		"discountPrice": 80,
+		"shop": {
+			"uuid": "3fa85f64-5717-4562-b3fc-2c963f66afa6",
+			"name": "string"
+		},
+		"picturesList": [
+			{
+				"uuid": "3fa85f64-5717-4562-b3fc-2c963f66afa6",
+				"filePath": "string"
+			}
+		]
+	},
+	{
+		"uuid": "3fa85f64-5717-4562-b3fc-2c963f66afa6",
+		"name": "string",
+		"discount": 0,
+		"rating": 0,
+		"amountReviews": 0,
+		"price": 0,
+		"discountPrice": 0,
+		"shop": {
+			"uuid": "3fa85f64-5717-4562-b3fc-2c963f66afa6",
+			"name": "string"
+		},
+		"picturesList": [
+			{
+				"uuid": "3fa85f64-5717-4562-b3fc-2c963f66afa6",
+				"filePath": "string"
+			}
+		]
+	},
+	{
+		"uuid": "3fa85f64-5717-4562-b3fc-2c963f66afa6",
+		"name": "string",
+		"discount": 0,
+		"rating": 0,
+		"amountReviews": 0,
+		"price": 0,
+		"discountPrice": 0,
+		"shop": {
+			"uuid": "3fa85f64-5717-4562-b3fc-2c963f66afa6",
+			"name": "string"
+		},
+		"picturesList": [
+			{
+				"uuid": "3fa85f64-5717-4562-b3fc-2c963f66afa6",
+				"filePath": "string"
+			}
+		]
+	},
+	{
+		"uuid": "3fa85f64-5717-4562-b3fc-2c963f66afa6",
+		"name": "string",
+		"discount": 0,
+		"rating": 0,
+		"amountReviews": 0,
+		"price": 0,
+		"discountPrice": 0,
+		"shop": {
+			"uuid": "3fa85f64-5717-4562-b3fc-2c963f66afa6",
+			"name": "string"
+		},
+		"picturesList": [
+			{
+				"uuid": "3fa85f64-5717-4562-b3fc-2c963f66afa6",
+				"filePath": "string"
+			}
+		]
+	}
+]

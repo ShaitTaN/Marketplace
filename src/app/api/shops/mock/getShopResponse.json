@@ -1,0 +1,17 @@
+{
+	"uuid": "3fa85f64-5717-4562-b3fc-2c963f66afa6",
+	"name": "Brand Name",
+	"description": "M&G all natural — это локальный бренд маленького и уютного города Кострома. Мы создаем изделия из натуральных тканей: хлопка, льна, муслина и 100% вискозы.",
+	"rating": 4.8,
+	"subscribers": 634,
+	"amountFeedback": 24700,
+	"amountPublications": 321,
+	"profilePicture": {
+		"uuid": "3fa85f64-5717-4562-b3fc-2c963f66afa6",
+		"filePath": "string"
+	},
+	"bannerPicture": {
+		"uuid": "3fa85f64-5717-4562-b3fc-2c963f66afa6",
+		"filePath": "string"
+	}
+}

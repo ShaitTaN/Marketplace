@@ -1,0 +1,42 @@
+@import 'src/variables.scss';
+
+.cardActions {
+	.action {
+		svg {
+			cursor: pointer;
+		}
+		span {
+			color: $mainColor;
+			font-size: 14px;
+			font-style: normal;
+			font-weight: 600;
+			line-height: 16px;
+			cursor: pointer;
+		}
+
+		.liked {
+			path {
+				stroke: $likedColor;
+				fill: $likedColor;
+			}
+		}
+
+		&:nth-child(2):hover {
+			svg {
+				path {
+					stroke: $secondaryColor;
+				}
+			}
+			span {
+				color: $secondaryColor;
+			}
+		}
+		&:nth-child(3):hover {
+			svg {
+				path {
+					fill: $secondaryColor;
+				}
+			}
+		}
+	}
+}

@@ -1,0 +1,71 @@
+@import 'src/variables.scss';
+
+.layoutWithContent {
+	margin-top: 16px;
+
+	.myReviewBlockWrapper {
+		padding: 24px;
+		border-radius: 16px;
+		background: $white;
+		width: 814px;
+		&:hover {
+			box-shadow: 0px 4px 16px 0px $shadowColor;
+		}
+		.imgWrapper {
+			cursor: pointer;
+			width: 52px;
+			height: 52px;
+			border-radius: 4px;
+		}
+		.title {
+			width: 434px;
+		}
+		.date {
+			font-size: 12px;
+			font-style: normal;
+			font-weight: 400;
+			line-height: 120%;
+			color: $tertiaryTextColor;
+		}
+		.wrapperDescription {
+			margin-left: 52px;
+			.description {
+				font-size: 14px;
+				font-style: normal;
+				font-weight: 400;
+				line-height: 130%;
+				color: $mainTextColor;
+				width: 699px;
+			}
+			.slideWrapper {
+				width: 210px;
+				height: 210px;
+				cursor: pointer;
+			}
+		}
+		.replies {
+			margin-left: 52px;
+			margin-top: 4px;
+			border-left: 1px solid $secondaryColor;
+		}
+	}
+}
+
+.layoutWithoutContent {
+	width: 813px;
+	background-color: $white;
+	margin-top: -13px;
+	border-radius: 0 0 16px 16px;
+	.textWrapper {
+		padding: 241px 24px 354px 24px;
+		.text {
+			width: 367px;
+			text-align: center;
+			font-size: 14px;
+			font-style: normal;
+			font-weight: 400;
+			line-height: 130%;
+			color: $mainTextColor;
+		}
+	}
+}

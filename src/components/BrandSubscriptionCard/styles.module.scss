@@ -1,0 +1,66 @@
+@import '/src/variables.scss';
+
+.brandSubscriptionCard {
+	position: relative;
+	width: 401px;
+	box-shadow: 0px 0px 0px 0px transparent;
+	transition: box-shadow 0.3s ease;
+	padding: 24px;
+	&:hover {
+		box-shadow: 0px 4px 16px 0px $shadowColor;
+	}
+	.cardContent {
+		.avatar {
+			background-color: $backgroundLight;
+		}
+		.brandInfo {
+			.title {
+				font-size: 16px;
+				font-style: normal;
+				font-weight: 600;
+				line-height: normal;
+				width: 302px;
+			}
+			.text {
+				font-size: 14px;
+				font-style: normal;
+				font-weight: 400;
+				line-height: 130%;
+				color: $tertiaryTextColor;
+			}
+			.rate {
+				font-size: 14px;
+				font-style: normal;
+				font-weight: 400;
+				line-height: 130%;
+				color: $textareaColor;
+			}
+		}
+		button {
+			width: 100%;
+		}
+	}
+	.heartIcon {
+		cursor: pointer;
+		position: absolute;
+		top: 8px;
+		right: 8px;
+		> svg {
+			width: 24px;
+			height: 24px;
+		}
+		&.heartActive {
+			> svg {
+				path {
+					fill: $warningTextColor;
+					stroke: $warningTextColor;
+				}
+			}
+		}
+	}
+	:global {
+		.ant-card-body {
+			padding: 0;
+		}
+	}
+}

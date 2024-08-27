@@ -1,0 +1,18 @@
+@import 'src/variables.scss';
+.flex {
+	margin-top: 12px;
+	.link {
+		color: #171d4b;
+		font-size: 12px;
+		font-style: normal;
+		font-weight: 600;
+		line-height: normal;
+		display: flex;
+		box-sizing: border-box;
+		gap: 4px;
+		height: 15px;
+		&:hover {
+			border-bottom: 1px solid $mainColor;
+		}
+	}
+}

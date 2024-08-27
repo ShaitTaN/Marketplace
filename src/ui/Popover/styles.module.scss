@@ -1,0 +1,27 @@
+@import 'src/variables.scss';
+.popover {
+	&.withoutBorder {
+		:global{
+			.ant-popover-inner {
+				border: none;
+				padding: 8px 16px;
+				.ant-popover-inner-content {
+					color: $textareaColor;
+				}
+			}
+		}
+	}
+	:global {
+		.ant-popover-arrow {
+			display: none;
+		}
+		.ant-popover-inner {
+			padding: 12px 20px;
+			border: 1px solid $secondaryColor;
+			border-radius: 8px;
+			.ant-popover-inner-content {
+				color: $mainTextColor;
+			}
+		}
+	}
+}

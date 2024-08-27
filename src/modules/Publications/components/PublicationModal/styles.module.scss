@@ -1,0 +1,44 @@
+@import 'src/variables.scss';
+
+.modal {
+	.ant-modal-content {
+		padding: 0;
+	}
+
+	.container {
+		position: relative;
+		.btn {
+			position: absolute;
+			height: 172px;
+			padding: 7px 26px;
+			top: 337.5px;
+			transform: translateY(-50%);
+			background: transparent;
+			border: none;
+			cursor: pointer;
+
+			&Left {
+				left: -76px;
+				svg {
+					transform: rotate(180deg);
+				}
+			}
+			&Right {
+				right: -76px;
+			}
+
+			svg {
+				path {
+					stroke: $tertiaryTextColor;
+				}
+			}
+			&:hover {
+				svg {
+					path {
+						stroke: $mainBgColor;
+					}
+				}
+			}
+		}
+	}
+}

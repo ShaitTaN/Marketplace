@@ -1,0 +1,27 @@
+@import 'src/variables.scss';
+
+.cookiesWrapper {
+	position: absolute;
+	margin-left: 789px;
+	.cookies {
+	position: fixed;		
+		padding: 12px;
+		background-color: $mainColor;
+		border-radius: 8px;
+		z-index: 3;
+		bottom: 50px;
+
+		> span {
+			width: 188px;
+			color: $secondaryTextColor;
+			font-size: 12px;
+			font-style: normal;
+			font-weight: 400;
+			line-height: 120%;
+			> a {
+				color: $secondaryTextColor;
+				text-decoration: underline;
+			}
+		}
+	}
+}

@@ -1,0 +1,8 @@
+@import 'src/variables.scss';
+
+.productCard {
+	max-width: 322px;
+	position: sticky;
+	top: $topPostionForSticky;
+	height: fit-content;
+}

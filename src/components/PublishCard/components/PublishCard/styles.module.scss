@@ -1,0 +1,52 @@
+@import 'src/variables.scss';
+
+#card {
+	border: none;
+	height: auto;
+	padding: 20px;
+	border-radius: 16px;
+	&:hover {
+		box-shadow: 0px 4px 16px 0px $shadowColor;
+	}
+
+	:global {
+		.ant-card-body {
+			padding: 0;
+		}
+		.ant-typography-expand {
+			position: relative;
+			color: $mainColor;
+			font-size: 14px;
+			font-weight: 600;
+			line-height: 16px;
+			z-index: 2;
+		}
+	}
+}
+
+#cardShortened {
+	display: flex;
+	justify-content: center;
+	border: none;
+	padding: 20px;
+	border-radius: 16px;
+	&:hover {
+		box-shadow: 0px 4px 16px 0px $shadowColor;
+	}
+
+	.link {
+		max-width: 100%;
+		color: $secondaryColor;
+		font-size: 18px;
+		font-style: normal;
+		font-weight: 600;
+		line-height: normal;
+	}
+
+	:global {
+		.ant-card-body {
+			padding: 0;
+			width: 100%;
+		}
+	}
+}

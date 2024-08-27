@@ -1,0 +1,52 @@
+@import 'src/variables.scss';
+
+.userProfilePurchasedProductsWrapper {
+	width: 814px;
+	background-color: $white;
+	border-radius: 16px;
+	.titlePage {
+		border-radius: 16px;
+		background-color: $white;
+		width: 100%;
+		padding: 24px;
+		> span {
+			font-family: Geologica;
+			font-size: 24px;
+			font-style: normal;
+			font-weight: 500;
+			line-height: normal;
+			color: $mainTextColor;
+		}
+	}
+
+	.purchasedProductWrapperWithContent {
+		padding: 0 24px 24px 24px;
+		height: 100%;
+	}
+
+	.purchasedProductWrapperWithoutContent {
+		padding: calc(301px - 24px) 24px 354px 24px;
+		height: 100%;
+		span {
+			font-size: 14px;
+			font-style: normal;
+			font-weight: 400;
+			line-height: 130%;
+			color: $mainTextColor;
+		}
+	}
+}
+
+.helpPopover {
+	.helpText {
+		width: 156px;
+		span {
+			font-size: 12px;
+			font-style: normal;
+			font-weight: 400;
+			line-height: 120%;
+			color: $textareaColor;
+			text-align: center;
+		}
+	}
+}

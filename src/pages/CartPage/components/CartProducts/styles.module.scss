@@ -1,0 +1,40 @@
+@import '/src/variables.scss';
+
+.cartProducts {
+	flex-grow: 1;
+
+	.cart {
+		background: $mainBgColor;
+		border-radius: 16px;
+		padding: 24px;
+
+		.delete {
+			font-size: 14px;
+			font-weight: 600;
+			line-height: 16px;
+			color: $mainTextColor;
+			cursor: pointer;
+		}
+
+		h3 {
+			color: $mainTextColor;
+			font-family: 'Geologica';
+			font-size: 24px;
+			font-weight: 500;
+			line-height: normal;
+			margin: 0;
+		}
+	}
+	.disabled {
+		background: $mainBgColor;
+		border-radius: 16px;
+		padding: 24px;
+		h3 {
+			color: $mainTextColor;
+			font-size: 16px;
+			font-weight: 600;
+			line-height: normal;
+			margin: 0;
+		}
+	}
+}

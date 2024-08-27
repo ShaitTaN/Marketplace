@@ -1,0 +1,78 @@
+@import 'src/variables.scss';
+
+.wrapper {
+	padding: 24px;
+	background: white;
+	border-radius: 16px;
+
+	.title {
+		margin: 0;
+		font-size: 18px;
+		font-weight: 600;
+		line-height: normal;
+		color: $mainTextColor;
+	}
+	.id {
+		font-size: 14px;
+		font-weight: 400;
+		line-height: 130%;
+		color: $tertiaryTextColor;
+	}
+
+	.info {
+		span {
+			font-size: 14px;
+			font-weight: 400;
+			line-height: 130%;
+			color: $mainTextColor;
+		}
+
+		b {
+			font-weight: 600;
+			line-height: 16px;
+		}
+
+		.trackInfo {
+			font-size: 14px;
+			font-weight: 600;
+			line-height: 16px;
+		}
+	}
+
+	.slide {
+		width: 152px;
+		height: 152px;
+		border-radius: 8px;
+
+		.img {
+			width: 100%;
+			height: 100%;
+			filter: brightness(96%);
+			border-radius: 8px;
+		}
+		.grayDiv {
+			width: 100%;
+			height: 100%;
+			background-color: $grey;
+			border-radius: 8px;
+		}
+	}
+
+	.payInfo {
+		font-size: 14px;
+		font-weight: 400;
+		line-height: 130%;
+		.timer {
+			color: $warningTextColor;
+			font-size: 18px;
+			font-weight: 600;
+			line-height: normal;
+		}
+		.descriptionText {
+			color: $warningTextColor;
+			font-size: 14px;
+			font-weight: 400;
+			line-height: 130%;
+		}
+	}
+}

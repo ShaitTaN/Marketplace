@@ -1,0 +1,55 @@
+@import 'src/variables.scss';
+
+.wrapper {
+	.layoutWithContent {
+		margin-top: 12px;
+		display: grid;
+		grid-template-columns: repeat(2, 1fr);
+		grid-gap: 12px;
+		:global {
+			.ant-card .ant-card-body {
+				padding: 0;
+			}
+		}
+		.heartIcon {
+			path {
+				fill: rgba($secondaryTextColor, 0.2);
+				stroke: $secondaryTextColor;
+			}
+		}
+	}
+	.layoutWithoutContent {
+		background-color: $white;
+		padding: calc(183px - 24px) 24px 300px 24px;
+		border-radius: 0 0 16px 16px;
+		height: 100%;
+		> span {
+			font-size: 14px;
+			font-style: normal;
+			font-weight: 400;
+			line-height: 130%;
+			color: $mainTextColor;
+		}
+		.iconsBlock {
+			padding: 8px 16px;
+			> svg {
+				width: 24px;
+				height: 24px;
+				&:last-child {
+					path {
+						stroke: $warningTextColor;
+						fill: $warningTextColor;
+					}
+				}
+				&:nth-child(2) {
+					width: 16px;
+					height: 24px;
+					transform: rotate(180deg);
+					path {
+						stroke: $disabledColor;
+					}
+				}
+			}
+		}
+	}
+}

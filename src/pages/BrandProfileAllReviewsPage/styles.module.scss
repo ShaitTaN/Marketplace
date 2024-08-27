@@ -1,0 +1,25 @@
+@import '../../variables.scss';
+
+.brandProfileAllReviewsTitle {
+    width: 746px;
+    padding: 24px;
+    border-radius: 16px;
+    background: $white;
+
+    h3 {
+        margin: 0;
+        font-family: Geologica;
+        font-size: 24px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: normal;
+        color: $mainTextColor;
+    }
+
+    .backButton {
+        flex-direction: row;
+        gap: 12px;
+        justify-content: flex-start;
+        height: 24px;
+    }
+}

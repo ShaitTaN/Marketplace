@@ -1,0 +1,72 @@
+@import 'src/variables.scss';
+
+.card {
+	padding: 24px;
+	background: $mainBgColor;
+	border-radius: 16px;
+	box-shadow: 0px 4px 16px 0px rgba(8, 12, 40, 0.1);
+}
+
+.title {
+	color: $mainTextColor;
+	font-size: 22px;
+	font-weight: 600;
+	line-height: normal;
+	margin: 0;
+}
+
+.subtitle {
+	font-size: 12px;
+	font-style: normal;
+	font-weight: 400;
+	line-height: 120%;
+	margin: 0;
+
+	&.primary {
+		color: $mainTextColor;
+	}
+	&.secondary {
+		color: $tertiaryTextColor;
+	}
+}
+
+.button {
+	border: none;
+	background: none;
+	cursor: pointer;
+	font-size: 12px;
+	font-weight: 600;
+	line-height: normal;
+	display: flex;
+	align-items: center;
+	padding: 0;
+
+	&.backButton {
+		width: fit-content;
+
+		.text {
+			font-size: 14px;
+			font-style: normal;
+			font-weight: 600;
+			line-height: 16px;
+			margin: 0;
+		}
+		svg {
+			width: 24px;
+			height: 24px;
+		}
+	}
+
+	&.primary {
+		color: $mainColor;
+		svg path {
+			stroke: $mainColor;
+		}
+	}
+	&.secondary {
+		color: $secondaryColor;
+		svg path {
+			stroke: $secondaryColor;
+		}
+	}
+}

@@ -1,0 +1,63 @@
+@import '/src/variables.scss';
+
+.cartPrice {
+	position: sticky;
+	top: $topPostionForSticky;
+	width: 365px;
+	background: $mainBgColor;
+	border-radius: 16px;
+	padding: 24px;
+	h4 {
+		margin: 0;
+		font-family: 'Geologica';
+		font-size: 24px;
+		font-style: normal;
+		font-weight: 500;
+		line-height: normal;
+		color: $mainTextColor;
+	}
+	h5 {
+		margin: 0;
+		font-size: 18px;
+		font-style: normal;
+		font-weight: 600;
+		line-height: normal;
+		color: $textareaColor;
+	}
+	.text {
+		color: $mainTextColor;
+		font-size: 14px;
+		font-weight: 400;
+		line-height: 130%;
+	}
+	.price {
+		color: $textareaColor;
+		font-size: 18px;
+		font-weight: 600;
+		line-height: normal;
+
+		&.priceWithDelivery {
+			font-size: 14px;
+			font-style: normal;
+			font-weight: 400;
+			line-height: 130%;
+		}
+	}
+	.helper {
+		color: $tertiaryTextColor;
+		font-size: 12px;
+		font-weight: 400;
+		line-height: 120%;
+		.spanWithlink {
+			color: $tertiaryTextColor;
+			font-size: 10px;
+			font-style: normal;
+			font-weight: 400;
+			line-height: 120%;
+			a {
+				color: $tertiaryTextColor;
+				text-decoration: underline;
+			}
+		}
+	}
+}

@@ -1,0 +1,37 @@
+@import '/src/variables.scss';
+
+.counter {
+	border-radius: 30px;
+	background: $buttonSecondaryBg;
+	padding: 4px 16px;
+	height: 32px;
+
+	.count {
+		width: 36px;
+		text-align: center;
+		font-weight: 600;
+		line-height: 16px;
+	}
+	.btn {
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		width: 24px;
+		height: 24px;
+		cursor: pointer;
+
+		svg {
+			path {
+				stroke: $mainColor;
+			}
+		}
+
+		&.disabled {
+			svg {
+				path {
+					stroke: $disabledColor;
+				}
+			}
+		}
+	}
+}

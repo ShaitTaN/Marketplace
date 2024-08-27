@@ -1,0 +1,41 @@
+@import 'src/variables.scss';
+
+.heartIcon {
+	display: flex;
+	cursor: pointer;
+	> svg {
+		path {
+			fill: $mainBgColor;
+		}
+	}
+	&.heartActive {
+		> svg {
+			path {
+				fill: $warningTextColor;
+				stroke: $warningTextColor;
+			}
+		}
+	}
+
+	&.borderWhiteActive {
+		> svg {
+			path {
+				fill: $warningTextColor;
+				stroke: $secondaryTextColor;
+			}
+		}
+	}
+
+	&.large {
+		> svg {
+			width: 32px;
+			height: 32px;
+		}
+	}
+	&.normal {
+		> svg {
+			width: 24px;
+			height: 24px;
+		}
+	}
+}

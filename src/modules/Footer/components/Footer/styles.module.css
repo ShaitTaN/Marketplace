@@ -1,0 +1,35 @@
+.footer {
+  position: relative;
+  width: 100%;
+  height: 433px;
+  padding: 0;
+  background: #171d4b;
+  overflow: hidden;
+}
+.footer::after {
+  position: absolute;
+  content: "";
+  top: 410px;
+  left: -25%;
+  right: -25%;
+  height: 413px;
+  border-radius: 100%;
+  background: #59ede1;
+  -webkit-filter: blur(100px);
+          filter: blur(100px);
+}
+
+.flex {
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  width: 1100px;
+  height: 323px;
+  margin: 48px auto 0;
+  z-index: 2;
+}

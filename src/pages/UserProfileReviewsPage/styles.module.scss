@@ -1,0 +1,12 @@
+@import 'src/variables.scss';
+
+.userProfileReviewsPageWrapper {
+	.title {
+    color: $mainTextColor;
+		font-family: Geologica;
+		font-size: 24px;
+		font-style: normal;
+		font-weight: 500;
+		line-height: normal;
+	}
+}

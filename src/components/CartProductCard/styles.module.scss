@@ -1,0 +1,106 @@
+@import 'src/variables.scss';
+
+.card {
+	position: relative;
+	line-height: 130%;
+
+	&.disabled {
+		.info {
+			color: $tertiaryTextColor;
+			.title {
+				color: $tertiaryTextColor;
+				max-width: 333px;
+				line-height: 130%;
+			}
+			.price {
+				line-height: 16px;
+				font-size: 14px;
+				color: $warningTextColor;
+				padding-bottom: 6px;
+			}
+		}
+	}
+
+	.img {
+		width: 174px;
+		height: 174px;
+		border-radius: 8px;
+		background: $grey;
+		position: relative;
+
+		img {
+			width: 100%;
+			height: 100%;
+			object-fit: cover;
+			border-radius: 8px;
+		}
+
+		.statuses {
+			display: flex;
+			position: absolute;
+			bottom: 8px;
+			left: 8px;
+			gap: 4px;
+		}
+	}
+	.info {
+		color: #000;
+		.title {
+			max-width: 333px;
+			line-height: 130%;
+			margin: 0;
+		}
+		.brand {
+			color: $secondaryColor;
+			font-weight: 600;
+			line-height: 16px;
+
+			svg {
+				width: 16px;
+				height: 16px;
+			}
+		}
+		.price {
+			font-size: 16px;
+			font-weight: 600;
+			line-height: normal;
+			height: 19px;
+			.oldPrice {
+				color: $tertiaryTextColor;
+				font-size: 12px;
+				font-weight: 600;
+				line-height: 16px;
+				text-decoration-line: line-through;
+			}
+		}
+	}
+	.controls {
+		.main {
+			padding-top: 8px;
+			svg {
+				width: 24px;
+				height: 24px;
+				cursor: pointer;
+				path {
+					stroke: $secondaryColor;
+				}
+				&:hover {
+					path {
+						stroke: $mainColor;
+					}
+				}
+			}
+			&.heartActive svg:first-child {
+				path {
+					stroke: $warningTextColor;
+					fill: $warningTextColor;
+				}
+			}
+		}
+	}
+	.checkbox {
+		position: absolute;
+		right: 0;
+		cursor: pointer;
+	}
+}

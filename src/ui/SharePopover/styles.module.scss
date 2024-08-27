@@ -1,0 +1,33 @@
+@import 'src/variables.scss';
+
+.popoverContent {
+	:global {
+		.ant-typography {
+			font-size: 14px;
+			font-style: normal;
+			font-weight: 600;
+			line-height: 16px;
+			color: $mainColor;
+		}
+	}
+	.iconWrapper {
+		width: 28px;
+		height: 28px;
+		display: flex;
+		align-items: center;
+	}
+
+	> div {
+		cursor: pointer;
+		&:hover {
+			svg {
+				path {
+					fill: $secondaryColor;
+				}
+			}
+			span {
+				color: $secondaryColor;
+			}
+		}
+	}
+}

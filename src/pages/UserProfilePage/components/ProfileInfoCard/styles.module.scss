@@ -1,0 +1,106 @@
+@import 'src/variables.scss';
+
+.wrapper {
+	width: 254px;
+	height: 644px;
+
+	.userNameWrapper {
+		border-radius: 16px 16px 8px 8px;
+		width: 100%;
+		height: 100%;
+		padding: 24px;
+		background-color: $white;
+
+		.userAvatar {
+			background: $backgroundLight;
+			cursor: pointer;
+			&:hover {
+				background: $backgroundLightHover;
+			}
+			:global {
+				.ant-avatar-string {
+					display: flex;
+					align-items: center;
+					justify-content: center;
+				}
+			}
+		}
+		.userName {
+			font-size: 14px;
+			font-style: normal;
+			font-weight: 600;
+			line-height: 16px;
+			color: $textareaColor;
+		}
+
+		.editProfile {
+			width: 148px;
+			font-size: 12px;
+			font-style: normal;
+			font-weight: 600;
+			line-height: normal;
+			color: $secondaryColor;
+		}
+	}
+
+	.actionsWrapper {
+		border-radius: 8px;
+		width: 100%;
+		height: 100%;
+		padding: 24px;
+		background-color: $white;
+
+		.title {
+			font-size: 14px;
+			font-style: normal;
+			font-weight: 600;
+			line-height: 16px;
+			color: $textareaColor;
+		}
+
+		.link {
+			line-height: 130%;
+			a {
+				font-size: 14px;
+				font-style: normal;
+				font-weight: 400;
+				color: $textareaColor;
+			}
+		}
+	}
+
+	.textWithImgWrapper {
+		border-radius: 8px 8px 16px 16px;
+		width: 100%;
+		height: 100%;
+		padding: 24px;
+		background-color: $white;
+		cursor: pointer;
+
+		.exitText {
+			font-size: 14px;
+			font-style: normal;
+			font-weight: 600;
+			line-height: 16px;
+			color: $mainColor;
+		}
+	}
+}
+
+.modal {
+	.modalContent {
+		padding: 24px;
+
+		.text {
+			color: $mainTextColor;
+		}
+	}
+	.modalHeader {
+		& > div {
+			font-size: 22px;
+			font-weight: 600;
+			line-height: normal;
+			color: $mainTextColor;
+		}
+	}
+}

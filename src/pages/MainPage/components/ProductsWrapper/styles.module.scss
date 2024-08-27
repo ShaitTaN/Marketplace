@@ -1,0 +1,15 @@
+.wrapper {
+	display: flex;
+	gap: 24px;
+
+	&.reversed {
+		flex-direction: row-reverse;
+	}
+
+	.item {
+		width: 216px;
+	}
+	.big {
+		width: 328px;
+	}
+}

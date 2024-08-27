@@ -1,0 +1,18 @@
+@import '/src/variables.scss';
+
+.wrapper {
+	flex-grow: 1;
+	max-width: 814px;
+
+	.title {
+		margin: 0;
+		color: $mainTextColor;
+		font-family: Geologica;
+		font-size: 24px;
+		font-weight: 500;
+		line-height: normal;
+		padding: 24px 24px 0;
+		background: $mainBgColor;
+		border-radius: 16px 16px 0 0;
+	}
+}

@@ -1,0 +1,74 @@
+@import '../../variables.scss';
+
+.carousel {
+	height: 570px;
+	position: relative;
+	overflow: hidden;
+
+	.mini {
+		position: absolute;
+		transition: 0.3s ease;
+		.item {
+			width: 120px;
+			height: 120px;
+			background: gray;
+			border-radius: 8px;
+			cursor: pointer;
+
+			&.active {
+				border: 1px solid #171d4b;
+			}
+
+			img {
+				width: 100%;
+				height: 100%;
+				object-fit: cover;
+				border-radius: 8px;
+			}
+		}
+	}
+
+	.big {
+		width: 100%;
+		max-width: 570px;
+		height: 100%;
+		margin: 0 0 0 auto;
+		cursor: pointer;
+		position: relative;
+
+		img {
+			width: 100%;
+			height: 100%;
+			background: gray;
+			object-fit: cover;
+			border-radius: 8px;
+		}
+
+		.statuses {
+			display: flex;
+			gap: 8px;
+			position: absolute;
+			bottom: 16px;
+			left: 16px;
+		}
+	}
+
+	.btn {
+		position: absolute;
+		width: 44px;
+		height: 44px;
+		transform: rotate(90deg);
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		border: none;
+		bottom: 39px;
+		left: 38px;
+		padding: 0;
+
+		&.up {
+			transform: rotate(-90deg);
+			top: 21px;
+		}
+	}
+}

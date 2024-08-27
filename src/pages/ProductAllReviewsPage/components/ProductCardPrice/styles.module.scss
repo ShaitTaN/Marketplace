@@ -1,0 +1,67 @@
+@import 'src/variables.scss';
+.productCardPrice {
+	width: 100%;
+	background: #fff;
+	border-radius: 16px;
+	padding: 24px;
+	font-style: normal;
+	line-height: normal;
+
+	.title {
+		font-size: 16px;
+		font-weight: 600;
+		color: $mainTextColor;
+		font-style: normal;
+		line-height: normal;
+	}
+
+	.price {
+		font-size: 22px;
+		font-weight: 700;
+		color: $mainTextColor;
+		font-style: normal;
+		line-height: normal;
+	}
+
+	.lostProductons {
+		font-size: 14px;
+		font-weight: 400;
+		color: $warningTextColor;
+		font-style: normal;
+		line-height: 18.2px;
+	}
+
+	.tableSize {
+		font-size: 14px;
+		font-weight: 600;
+		color: $mainColor;
+		font-style: normal;
+		line-height: 16px;
+	}
+	.radioGroup {
+		display: flex;
+		gap: 12px;
+	}
+	.helpPopover {
+		width: 156px;
+		.helpText {
+			font-size: 12px;
+			font-style: normal;
+			font-weight: 400;
+			line-height: 120%;
+			color: $mainTextColor;
+		}
+	}
+	.helpIcon {
+		path {
+			stroke: $secondaryColor;
+			transition: stroke 0.3s ease;
+		}
+
+		&:hover {
+			path {
+				stroke: $mainColor;
+			}
+		}
+	}
+}

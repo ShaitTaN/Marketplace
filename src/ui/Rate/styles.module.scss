@@ -1,0 +1,50 @@
+@import 'src/variables.scss';
+
+.rate {
+	:global {
+		.ant-rate-star {
+			&.ant-rate-star-zero {
+				margin-inline-end: 4px;
+			}
+			&.ant-rate-star-full {
+				margin-inline-end: 4px;
+				svg {
+					fill: $backgroundStars;
+				}
+			}
+			&.ant-rate-star-focused {
+				margin-inline-end: 4px;
+			}
+		}
+	}
+	&.normal {
+		:global {
+			.ant-rate-star {
+				svg {
+					width: 18px;
+					height: 18px;
+				}
+			}
+		}
+	}
+	&.medium {
+		:global {
+			.ant-rate-star {
+				svg {
+					width: 20px;
+					height: 20px;
+				}
+			}
+		}
+	}
+	&.large {
+		:global {
+			.ant-rate-star {
+				svg {
+					width: 24px;
+					height: 24px;
+				}
+			}
+		}
+	}
+}

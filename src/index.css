@@ -1,0 +1,7 @@
+div:where(.css-dev-only-do-not-override-nbdl4n).ant-typography {
+	margin: 0;
+}
+
+.titleNotCopy{
+	user-select: none;
+}

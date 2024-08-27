@@ -1,0 +1,68 @@
+@import 'src/variables.scss';
+
+.comment {
+	font-size: 14px;
+	font-style: normal;
+	font-weight: 400;
+	line-height: normal;
+
+	&.reply {
+		padding-left: 16px;
+	}
+	&.productOwner {
+		.name {
+			color: $mainColor;
+			line-height: 16px;
+			padding: 4px 12px;
+			border-radius: 20px;
+			font-weight: 600;
+			background: $backgroundLight;
+		}
+	}
+
+	.name {
+		font-weight: 600;
+		color: $mainTextColor;
+	}
+	.date {
+		color: $tertiaryTextColor;
+		font-size: 12px;
+		line-height: 120%;
+	}
+	.text {
+		margin-top: 4px;
+		line-height: 130%;
+	}
+	.replyBtn {
+		font-size: 12px;
+		line-height: 120%;
+		color: $secondaryColor;
+		cursor: pointer;
+		&:hover {
+			text-decoration: underline;
+		}
+	}
+
+	.moreAnswers {
+		display: flex;
+		gap: 8px;
+		align-items: center;
+		margin-top: 12px;
+
+		p {
+			margin: 0;
+			color: #adb2d4;
+			font-size: 14px;
+			font-style: normal;
+			font-weight: 400;
+			line-height: 16px;
+			color: $secondaryColor;
+		}
+	}
+
+	.replies {
+		margin-left: 48px;
+		margin-top: 14px;
+		border-left: 1px solid $secondaryColor;
+	}
+}

@@ -1,0 +1,83 @@
+@import 'src/variables.scss';
+.modal {
+	position: relative;
+	:global {
+		.ant-modal-content {
+			padding: 0;
+			border-radius: 16px;
+			.ant-modal-close {
+				display: flex;
+				width: 40px;
+				height: 40px;
+				padding: 8px;
+				justify-content: center;
+				align-items: center;
+				position: absolute;
+				top: 0;
+				right: -48px;
+
+				.ant-modal-close-x {
+					svg {
+						width: 36px;
+						height: 36px;
+						path {
+							stroke: $buttonGrayBg;
+						}
+					}
+				}
+			}
+			.ant-modal-header {
+				margin-bottom: 20px;
+				.ant-modal-title {
+					span {
+						color: $mainTextColor;
+						font-size: 22px;
+						font-style: normal;
+						font-weight: 600;
+						line-height: normal;
+					}
+				}
+			}
+			.ant-modal-footer {
+				margin-top: 24px;
+				display: flex;
+				justify-content: end;
+			}
+		}
+	}
+
+	&.fullScreen {
+		top: 0;
+		max-width: 100%;
+		padding: 0;
+		position: relative;
+		:global {
+			.ant-modal-content {
+				padding: 0;
+				border-radius: 0;
+
+				.ant-modal-close {
+					display: flex;
+					width: 24px;
+					height: 24px;
+					padding: 8px;
+					justify-content: center;
+					align-items: center;
+					position: absolute;
+					top: 24px;
+					right: 48px;
+
+					.ant-modal-close-x {
+						svg {
+							width: 24px;
+							height: 24px;
+							path {
+								stroke: $buttonGrayBg;
+							}
+						}
+					}
+				}
+			}
+		}
+	}
+}

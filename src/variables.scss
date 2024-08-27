@@ -1,0 +1,76 @@
+$mainColor: #171d4b;
+$mainBgColor: #fff;
+$secondaryColor: #adb2d4;
+$mainTextColor: #080c28;
+$textareaColor: #080c28;
+$secondaryTextColor: #fff;
+$tertiaryTextColor: #a0a0a0;
+$warningTextColor: #d02438;
+
+$black: #000;
+$grey: #d9d9d9;
+$white: #fff;
+$teal: #32ccc0;
+$disabledColor: #dbdbdb;
+
+$topPostionForSticky: 78px;
+
+// buttons
+$buttonPrimaryBg: $mainColor;
+$buttonPrimaryHoverBg: #202d76;
+$buttonPrimaryActiveBg: #393f6a;
+$buttonGrayBg: #949494;
+
+$buttonSecondaryBg: #f2f3f7;
+$buttonSecondaryHoverBg: #e1e5f6;
+$buttonSecondaryActiveBg: #d7dae6;
+
+$buttonTertiaryBg: #fff;
+$buttonTertiaryHoverBg: #f2f3f7;
+$buttonTertiaryActiveBg: #d7dae6;
+
+$buttonDisabledBg: #f1f1f1;
+$buttonDisabledText: #a0a0a0;
+$buttonFocusedColor: #32ccc0;
+
+$buttonDangerBg: #fff;
+$buttonDangerHoverBg: #fff5f5;
+$buttonDangerActiveBg: #f4f1f1;
+
+// link
+$linkSecondary: #5a79fa;
+$linkSecondaryHover: #849cff;
+$linkSecondaryActive: #6374bd;
+$linkPrimary: $mainTextColor;
+$linkPrimaryHover: #202d76;
+$linkPrimaryActive: #393f6a;
+$linkTertiary: #adb2d4;
+$linkTertiaryHover: #7e86b9;
+$linkTertiaryActive: #9da2c1;
+$linkDisabled: #a0a0a0;
+
+// textFields
+$textDescriptionColor: #a0a0a0;
+$textDisabledColor: rgba(0, 0, 0, 0.25);
+$textActiveColor: rgba(0, 0, 0, 0.85);
+
+// backgrounds
+$backgroundGrey: #d9d9d9;
+$backgroundDisabled: #f5f5f5;
+$backgroundLight: #f2f3f7;
+$backgroundDark: #171d4b;
+$backgroundLightHover: #e6e7ea;
+$backgroundStars: #ffbd3d;
+
+//shadows
+$shadowColor: rgba(8, 12, 40, 0.1);
+
+// borders
+$borderColor: #dbdde7;
+$radioBorderColor: #a0a0a0;
+$radioCheckedBorderColor: $mainColor;
+$inputBorderColor: #dbdbdb;
+$tableBorderColor: #e8ebf2;
+
+//icons
+$likedColor: $warningTextColor;

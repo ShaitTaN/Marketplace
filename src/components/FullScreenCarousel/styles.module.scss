@@ -1,0 +1,65 @@
+@import '../../variables.scss';
+
+.wrapper {
+    height: 100vh;
+    padding-top: 24px;
+    padding-left: 48px;
+    .gallery {
+        width: fit-content;
+        max-height: 100vh;
+        overflow-y: auto;
+        scrollbar-width: none;
+        display: flex;
+        flex-direction: column;
+        gap: 8px;
+
+        .miniCard {
+            width: 120px;
+            min-height: 120px;
+            background-color: $grey;
+            cursor: pointer;
+            border-radius: 8px;
+
+            &.active {
+                border: 1.5px solid $mainColor;
+            }
+        }
+    }
+    .bigCard {
+        display: flex;
+        margin: 0 auto 24px auto;
+        position: relative;
+        width: 872px;
+
+        .mainImg {
+            border-radius: 0;
+            height: 100%;
+            width: 872px;
+            object-fit: cover;
+            filter: blur(96%);
+            opacity: 1;
+            background-color: $grey;
+
+            &.animation {
+                opacity: 0;
+                transition: opacity 300ms ease-out;
+            }
+        }
+
+        .swipeBtn {
+            position: absolute;
+            top: 50%;
+            width: 44px;
+            height: 44px;
+
+            &:hover {
+                background: $secondaryColor;
+                svg {
+                    path {
+                        stroke: $white;
+                    }
+                }
+            }
+        }
+    }
+}

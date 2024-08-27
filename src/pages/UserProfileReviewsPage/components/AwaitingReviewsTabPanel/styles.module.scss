@@ -1,0 +1,26 @@
+@import 'src/variables.scss';
+
+.layoutWithContent {
+	display: grid;
+	grid-template-columns: repeat(3, 1fr);
+	grid-gap: 12px;
+	margin-top: 12px;
+}
+.layoutWithoutContent {
+	width: 813px;
+	background-color: $white;
+	margin-top: -13px;
+	border-radius: 0 0 16px 16px;
+	.textWrapper {
+		padding: 232px 24px 345px 24px;
+		.text {
+			width: 367px;
+			text-align: center;
+			font-size: 14px;
+			font-style: normal;
+			font-weight: 400;
+			line-height: 130%;
+      color: $mainTextColor;
+		}
+	}
+}

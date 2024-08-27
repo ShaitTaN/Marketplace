@@ -1,0 +1,24 @@
+@import 'src/variables.scss';
+
+.reviews {
+	h3 {
+		color: $mainTextColor;
+		font-family: 'Geologica';
+		font-size: 24px;
+		font-style: normal;
+		font-weight: 500;
+		margin: 0;
+
+		sup {
+			margin-left: 5px;
+		}
+	}
+
+	.noReviews {
+		font-size: 14px;
+		font-style: normal;
+		font-weight: 400;
+		line-height: 130%;
+		color: $mainTextColor;
+	}
+}

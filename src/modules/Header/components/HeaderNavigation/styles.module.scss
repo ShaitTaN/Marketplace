@@ -1,0 +1,42 @@
+@import 'src/variables.scss';
+
+.flex {
+	padding: 8px 0 12px 0;
+	position: relative;
+
+	.search {
+		border-radius: 8px;
+		border: 2px solid $mainColor;
+		background-color: $mainColor;
+		::placeholder {
+			color: #adb2d4;
+			font-size: 18px;
+			font-style: normal;
+			font-weight: 400;
+			line-height: normal;
+		}
+		:global {
+			.ant-input {
+				height: 44px;
+				padding: 8px;
+			}
+		}
+	}
+	.flexIcons {
+		> div {
+			&:hover {
+				> svg {
+					path {
+						stroke: $secondaryColor;
+					}
+					rect {
+						stroke: $secondaryColor;
+					}
+				}
+				a {
+					color: $secondaryColor;
+				}
+			}
+		}
+	}
+}
